@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Book Library</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body onload="main()">
+  <h1>Your Online Book Library</h1>
+
+  <div id="main_div">
+    
+    <div id="add_book">
+      <div id="input_area">
+        <div id="divTitle" class='inputPiece'>
+          <p>Title</p>
+          <input type="text" placeholder=" Lord of the Rings" id="title" />
+        </div>
+        <div id = "divAuthor" class='inputPiece'>
+          <p>Author</p>
+          <input type="text" placeholder=" Some Guy" id="author" />
+        </div>
+        <div id="divPages" class='inputPiece'>
+          <p># of pages</p>
+          <input type="number" placeholder="160" min=1 id='page'/>
+        </div>
+        <div id="divRead" class='inputPiece'>
+          <p>I read this book!</p>
+          <input type="checkbox" id="isRead">
+        </div>
+          <button id="add_button" class='inputPiecelol'>add</button> 
+      </div>
+    </div>
+    <div id="library">
+      
+
+      <div id="list">
+        <div id="book_listing">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body><script src="script.js"></script>
+</html>
