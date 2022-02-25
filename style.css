@@ -32,7 +32,6 @@ body {
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgb(250, 250, 246); */
   text-transform: capitalize;
   background-color: white
 }
@@ -141,6 +140,10 @@ button {
 
 
 #book_listing{
+  display: grid;
+  grid-template-areas: 
+  'title title title del'
+  'auth pages read del';
   
  
   margin: 5%;
@@ -152,10 +155,6 @@ button {
   border: 1px solid rgb(184, 184, 184);
   border-radius: 10px;
 
-  display: grid;
-  grid-template-areas: 
-  'title title title del'
-  'auth pages read del';
   
 }
 
@@ -164,15 +163,17 @@ button {
   color:rgb(134, 134, 134);
 }
 
-#bookTitleDiv {
-  grid-area: title;
-  color: black;
-  
-}
+
 
 #bookTitle {
   margin-left: 3%;
   font-size: 20px;
+}
+
+#bookTitleDiv {
+  grid-area: title;
+  color: black;
+  
 }
 
 #bookAuthorDiv {
@@ -204,6 +205,88 @@ button {
   
 }
 
+@media only screen and (max-width: 1000px ){
+  #bookReadDiv, #bookDeleteDiv, #bookPagesDiv, #bookAuthorDiv, #bookTitleDiv {
+    width: 100px;
+  }
+
+  #input_area{
+    display: grid;
+    grid-template-areas: 
+    'title author'
+    'pages read'
+    'btn btn';
+    padding: 2%;
+  }
+
+  #divAuthor {
+    grid-area: author;
+  }
+
+  #divTitle {
+    grid-area: title;
+  }
+
+  #divPages {
+    grid-area: pages;
+  }
+
+  #divRead {
+    grid-area: read;
+  }
+
+  #divAdd {
+    grid-area: btn;
+    text-align: center;
+  }
+
+  
+}
+
+
+@media only screen and (max-width: 550px ){
+  #input_area{
+    display: block;
+    padding: 5%;
+  }
+
+  
+
+  #book_listing {
+    display: block;
+  }
+
+  #divRead {
+    display: flex;
+  }
+
+  #isRead {
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+
+  #divAdd {
+    margin-top: 3%;
+  }
+
+  #bookTitleDiv,
+  #bookAuthorDiv,
+  #bookPagesDiv,
+  #bookDeleteDiv
+   {
+    text-align: center;
+    width: 100%;
+  }
+  #bookReadDiv{
+    width: auto;
+  }
+  
+  .edit_button {
+    width: auto;
+  }
+ 
+  
+}
 
 
 

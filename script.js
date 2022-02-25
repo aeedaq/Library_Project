@@ -104,8 +104,8 @@ function displayBook() {
     bookListing.appendChild(bookTitle);
     bookListing.appendChild(bookAuthor);
     bookListing.appendChild(bookPages);
-    bookListing.appendChild(bookDeleteBtn);
     bookListing.appendChild(bookRead);
+    bookListing.appendChild(bookDeleteBtn);
 
     bookTitle.appendChild(title);
     bookAuthor.appendChild(author);
