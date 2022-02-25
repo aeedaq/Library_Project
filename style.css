@@ -250,6 +250,9 @@ button {
     padding: 5%;
   }
 
+  #list {
+    text-align: center;
+  }
   
 
   #book_listing {
@@ -274,7 +277,7 @@ button {
   #bookPagesDiv,
   #bookDeleteDiv
    {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
   }
   #bookReadDiv{
